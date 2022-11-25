@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* css reset */
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('Gym pics/Squat.jpg');
+            height: auto;
+        }
+
+        .left {
+            /* border: 3px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            left: 35px;
+            top: 5px;
+        }
+
+        .left img {
+            width: 115px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .center {
+            /* border: 3px solid green; */
+            display: block;
+            width: 50%;
+            margin: 45px auto;
+        }
+
+        .right {
+            position: absolute;
+            right: 35px;
+            top: 30px;
+            /* border: 3px solid blue; */
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 23px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 37px;
+        }
+
+        .navbar li a:hover,.navbar li a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .btn {
+            margin: 6px 9px;
+            background-color: black;
+            color: white;
+            padding: 8px 14px;
+            border: 3px solid grey;
+            border-radius: 12px;
+            font-size: 20px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            cursor: pointer;
+        }
+
+         .btn:hover {
+            /* background-color: rgb(64, 143, 111); */
+            color: gray;
+         } 
+        .container{
+            border: 2px solid white;
+            border-radius: 10px;
+            width: 40%;
+            margin: 140px 40px;
+            padding: 30px 40px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .formgroup input{
+            text-align: center;
+            display: block;
+            width: 500px;
+            padding: 6px;
+            margin: 15px auto;
+            border: 2px solid black;
+            border-radius: 12px;
+            font-size: 20px;
+
+        }
+        .container button{
+            width: 510px;
+            display: block;
+            margin: auto; 
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="Gym pics/gym.jpg" alt="">
+            <div>SAMEER FITNESS</div>
+        </div>
+
+        <!-- center for Navbar -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn"> Instagram</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>If You Are Serious About Your Body Then Join Our Gym</h1>
+        <form action="noaction.php"></form>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter Your Name">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter Your Goal">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter Your Number">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter Your Email-Id">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter Your Address">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
